@@ -1,0 +1,60 @@
+# ========== Unity ==========
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+
+# Rider / VSCode / Visual Studio
+.idea/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.pidb
+*.user
+*.userprefs
+*.booproj
+
+# Asset Store ve Paketler
+*.unitypackage
+
+# Crash Reports
+sysinfo.txt
+
+# TextMesh Pro
+[Tt][Mm][Pp]/*
+
+# Collaborate
+.collabignore
+
+# Addressables
+/Assets/AddressableAssetsData/*
+
+# Cache
+[Bb]uild/[Cc]ache/
+[Bb]uild/[Cc]ache.meta
+/Library/ShaderCache/
+
+# Generated animation stuff
+*.anim.meta
+
+# Lightmap ve GI
+/[Aa]ssets/**/Lightmap-*/
+LightmapSnapshot.asset
+LightingData.asset
+*.lighting
+
+# ========== OS ==========
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
