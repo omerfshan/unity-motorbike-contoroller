@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c40534646e42e4291ccb1503490950, type: 3}
   m_Name: MotorSettings
   m_EditorClassIdentifier: 
-  _maxSpeed: 50
-  _acceleration: 3
+  _maxSpeed: 100
+  _acceleration: 10
   _steerStrenght: 75
   _tiltAngle: 30
   _gravity: 26
