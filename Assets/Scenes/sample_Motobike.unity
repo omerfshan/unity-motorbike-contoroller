@@ -1810,7 +1810,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
+      maxColor: {r: 0.990566, g: 0.990566, b: 0.990566, a: 0.19215687}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -2338,7 +2338,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.04
       mode: 0
       spread: 0
       speed:
@@ -7246,6 +7246,7 @@ MonoBehaviour:
   SkidSource: {fileID: 4549156302788028755}
   FrontTyre: {fileID: 134924199141373175}
   BackTyre: {fileID: 7302161992407840407}
+  _smoke: {fileID: 1982573863}
 --- !u!82 &4549156302788028755
 AudioSource:
   m_ObjectHideFlags: 0

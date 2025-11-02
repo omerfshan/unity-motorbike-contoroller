@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections;
 using Unity.Mathematics;
+using TMPro;
 
 
 
@@ -50,8 +51,9 @@ public class MotorbikeController : MonoBehaviour
         Movement();
         SkidMarks();
         EngineSound();
+        Smoke();
         FrontTyre.transform.Rotate(Vector3.right, Time.fixedDeltaTime * _settings.tyreRotSpeed * currentVelocityOffset);
-        BackTyre.transform.Rotate(Vector3.right, Time.fixedDeltaTime * _settings.tyreRotSpeed * currentVelocityOffset);
+        BackTyre.transform.Rotate(Vector3.right, Time.fixedDeltaTime * _settings.tyreRotSpeed *moveInput);
 
 
     }
@@ -91,7 +93,7 @@ public class MotorbikeController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            SphereRB.linearVelocity *= _settings.breakingFactor / 10f;
+            SphereRB.linearVelocity *= _settings.breakingFactor / 10;
         }
     }
     private void BikeTilt()
@@ -146,6 +148,16 @@ public class MotorbikeController : MonoBehaviour
     {
         EngineSource.pitch = Mathf.Lerp(_settings.minPitchSound, _settings.maxPitchSound, Mathf.Abs(currentVelocityOffset));
     }
-
+    private void Smoke()
+    {
+        if (skidMarks.emitting)
+        {
+            _smoke.Play();
+        }
+        else
+        {
+            _smoke.Stop();
+        }
+    }
 
 }
