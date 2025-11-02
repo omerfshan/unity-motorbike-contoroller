@@ -12,10 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c40534646e42e4291ccb1503490950, type: 3}
   m_Name: MotorSettings
   m_EditorClassIdentifier: 
-  _maxSpeed: 50
+  _maxSpeed: 30
   _acceleration: 3
-  _steerStrenght: 75
-  _tiltAngle: 30
-  _gravity: 26
-  _biketiltIncrement: 0.09
+  _steerStrenght: 100
+  _tiltAngle: 0
+  _gravity: 25
+  _biketiltIncrement: 0.11
+  _zTiltAngle: 60
+  _handleRotVal: 30
+  _handleRotSpeed: 0.15
+  _skidWidth: 0.062
+  _minSkidVelocity: 10
+  _tyreRotSpeed: 10000
   _breakingFactor: 1
+  _maxPitchSound: 4.09
+  _minPitchSound: 0.812
